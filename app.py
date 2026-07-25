@@ -5,6 +5,12 @@ import pickle
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 
+# Download NLTK data (Render ke liye)
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+
 app = Flask(__name__, template_folder="templates", static_folder="static")
 
 # Load model and vectorizer
@@ -47,11 +53,7 @@ def predict():
 
         message = request.form.get("news")
 
-        print("User Input:", message)
-
         pred = fake_news_det(message)
-
-        print("Prediction:", pred)
 
         if pred[0] == 1:
             prediction_text = "Prediction of the News : Looking Fake News 📰"
