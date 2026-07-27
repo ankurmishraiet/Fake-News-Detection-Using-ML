@@ -1,1 +1,321 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#f4f7fb;
+}
+
+
+
+/* Navbar */
+
+.navbar{
+    padding:15px 0;
+}
+
+
+.navbar-brand{
+    font-size:24px;
+}
+
+
+
+/* Hero Section */
+
+.hero{
+
+    min-height:85vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:60px 0;
+
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color:white;
+
+}
+
+
+
+.hero h1{
+
+    font-size:45px;
+
+    font-weight:700;
+
+    animation:slideDown 1s;
+
+}
+
+
+
+.hero p{
+
+    font-size:18px;
+
+    margin-top:20px;
+
+}
+
+
+
+/* Main Prediction Card */
+
+
+.hero .card{
+
+    border-radius:25px;
+
+    border:none;
+
+    color:#333;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+
+}
+
+
+
+.card-body{
+
+    padding:35px;
+
+}
+
+
+
+/* Text Area */
+
+
+textarea{
+
+    border-radius:15px !important;
+
+    padding:15px !important;
+
+    font-size:16px;
+
+    border:2px solid #ddd !important;
+
+}
+
+
+
+textarea:focus{
+
+    border-color:#667eea !important;
+
+    box-shadow:0 0 10px rgba(102,126,234,0.4)!important;
+
+}
+
+
+
+/* Buttons */
+
+
+.btn{
+
+    border-radius:30px;
+
+    padding:12px 30px;
+
+    transition:0.3s;
+
+}
+
+
+
+.btn-primary{
+
+    background:#667eea;
+
+    border:none;
+
+}
+
+
+
+.btn-primary:hover{
+
+    background:#4b5ed7;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+.btn-secondary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* Character Counter */
+
+
+#counter{
+
+    font-size:14px;
+
+    color:#777;
+
+}
+
+
+
+/* Prediction Result */
+
+
+.alert{
+
+    border-radius:20px;
+
+    animation:slideUp 0.8s;
+
+}
+
+
+.alert h2{
+
+    font-weight:700;
+
+}
+
+
+
+/* Feature Cards */
+
+
+.container .card{
+
+    transition:0.4s;
+
+}
+
+
+
+.container .card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* Footer */
+
+
+footer{
+
+    margin-top:50px;
+
+}
+
+
+
+/* Animations */
+
+
+@keyframes slideDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-50px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:768px){
+
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+
+
+.hero{
+
+    padding:40px 15px;
+
+}
+
+
+
+.btn{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+
+.card-body{
+
+    padding:20px;
+
+}
+
+
+}
