@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 model = pickle.load(open("model.pkl", "rb"))
 
-vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
+vectorizer = pickle.load(open("vector.pkl", "rb"))
 
 
 
